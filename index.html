@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>PUBG: BATTLEGROUNDS</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="bg-[black] py-4 relative text-white w-[100%]">
+        <div class="flex justify-center bg-[black]">
+        <img src="logo.png" class="h-[48px] w-[140px]">            
+        </div>
+        <div class="flex py-2 text-xl absolute top-[30%] xl:left-[65%] hidden xl:inline-flex">
+            <i class="ri-global-line text-2xl px-1 py-2"></i>
+            <p class="py-2">ENGLISH(EMEA)</p>
+            <i class="ri-user-line pl-2 py-2"></i>
+            <p class="py-2 pr-3">Log-in</p>
+         <h2 class="bg-[#f6bf00] text-black px-3 py-2 mx-3 text-center text-xl font-bold cursor-pointer hover:bg-[#f9d65a]" id="play_now">PLAY NOW</h2>
+        </div>
+        <div class="text-3xl absolute top-[40%] left-[90%] inline-flex xl:hidden" id="menu">
+            <i class="ri-menu-3-fill"></i>
+        </div>
+        <div class=" hidden" id="cross">
+        <i class="ri-close-line"></i>            
+        </div>
+
+    </div>
+   <!-- 2nd navbar -->
+   <div class="flex py-3 bg-[#222] text-white justify-center hidden xl:inline-flex w-[100%]" id="menu_bar">
+      <h3 class="px-3 md:text-lg font-semibold text-center py-2">GAME INFO</h3>
+      <h3 class="px-3 md:text-lg font-semibold text-center py-2">MEDIA</h3>
+      <h3 class="px-3 md:text-lg font-semibold text-center py-2">NEWS</h3>
+      <h3 class="px-3 md:text-lg font-semibold text-center py-2">SUPPORT</h3>
+      <h3 class="px-3 md:text-lg font-semibold text-center py-2">EVENTS</h3>
+      <h3 class="px-3 md:text-lg font-semibold text-center py-2">COMMUNITY</h3>
+      <h3 class="px-3 md:text-lg font-semibold text-center py-2 xl:hidden" id="play_now2">Play Now</h3>
+   </div>
+
+   <!-- Menu body-->
+   <div id="menu_body">
+    <img src="pubg_bgjpg.jpg" class="img-fluid">
+    <span id="bullet" class="absolute top-[50%]"></span>
+    <img src="blood.png" class="hidden" id="blood">
+   </div>
+   <!-- News -->
+   <div class="container-fluid">
+      <div class="row text-center border flex justify-center">
+        <h2 class="text-center text-4xl py-3 font-bold">News</h2>
+        <div class="col-12 col-lg-3 h-[300px] md:h-[600px] mx-5 box">
+           <img src="card_1.png" class="mx-auto">
+           <h2 class="py-4 text-2xl font-bold">Weekly Bans Notice</h2>
+           <p class="hidden md:inline-flex font-medium">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aliquid quas harum exercitationem quos, nostrum recusandae quibusdam fugit odit at sunt perspiciatis atque facere architecto natus nihil repudiandae similique iusto doloremque. Facilis ullam, eius quidem sapiente fugit, at aliquid voluptatum laboriosam rem explicabo quos numquam consequuntur nulla rerum sed placeat?</p>
+        </div>
+        <div class="col-12 col-lg-3 h-[300px] md:h-[600px] mx-5 box">
+            <img src="card_2.png" class="mx-auto">
+            <h2 class="py-4 text-2xl font-bold">Pubg Ground</h2>
+            <p class="hidden md:inline-flex  font-medium">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aliquid quas harum exercitationem quos, nostrum recusandae quibusdam fugit odit at sunt perspiciatis atque facere architecto natus nihil repudiandae similique iusto doloremque. Facilis ullam, eius quidem sapiente fugit, at aliquid voluptatum laboriosam rem explicabo quos numquam consequuntur nulla rerum sed placeat?</p>
+        </div>
+        <div class="col-12 col-lg-3 h-[300px] md:h-[600px] mx-5 box"> 
+            <img src="card_3.png" class="mx-auto">
+            <h2 class="py-4 text-2xl font-bold">KFC In Pubg</h2>
+            <p class="hidden md:inline-flex font-medium ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aliquid quas harum exercitationem quos, nostrum recusandae quibusdam fugit odit at sunt perspiciatis atque facere architecto natus nihil repudiandae similique iusto doloremque. Facilis ullam, eius quidem sapiente fugit, at aliquid voluptatum laboriosam rem explicabo quos numquam consequuntur nulla rerum sed placeat?</p>
+        </div>
+      </div>
+         <!-- Youtube -->
+        <div class="row flex flex-wrap justify-center py-5 ">
+            <div class="col-12 col-md-5">
+              <img src="pubg_bgjpg.jpg">
+            </div>
+            <div class="col-12 col-md-5 hidden md:inline-flex">
+                <iframe  src="https://www.youtube.com/embed/rf1TpDeCaXM" title="Patch Report: Update 26.1 | PUBG: BATTLEGROUNDS EUROPE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-[600px] h-auto md:w-[900px] md:h-auto py-3"></iframe>
+            </div>
+        </div> 
+        <!-- footer -->
+        <div class="row bg-black py-5 text-white flex flex-col justify-center">
+            <div class="col-12 flex flex-col justify-center">
+                 <div class="flex justify-center text-3xl">
+                    <i class="ri-facebook-box-fill px-2"></i>
+                    <i class="ri-twitter-x-line px-2"></i>
+                    <i class="ri-youtube-fill px-2"></i>
+                    <i class="ri-instagram-fill px-2"></i>
+                </div>
+            </div>
+            <h2 class="text-center py-3">PUBG KRAFFTON</h2>
+            <div class="flex justify-center py-2">
+                <p class="px-2 border-r-2">PRIVACY POLICY</p>
+                <p class="px-2 border-r-2">TERMS OF SERVICE</p>
+                <p class="px-2 border-r-2">RULES OF CONDUCT</p>
+                <p class="px-2">COOKIE PREFERENCE</p>
+            </div>
+            <p class="text-center py-2">© 2023 KRAFTON, INC. PUBG IS A REGISTERED TRADEMARK OR SERVICE MARK OF KRAFTON, INC.</p>
+            <div class="text-center py-3 flex justify-center">
+                <i class="ri-time-line text-2xl px-1"></i>
+                <p class="text-xl" id="time"></p>
+            </div>
+        </div>
+   </div>
+
+
+    <!-- javaScript Code -->
+    <script src="javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

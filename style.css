@@ -1,0 +1,21 @@
+#menu{
+   
+}
+/* #menu:active{
+    cursor: url('aim_red.png'),pointer;
+} */
+#bullet{
+  
+}
+.box{
+    overflow: hidden;
+}
+.box img{
+    transition: all ease 1s;
+    border-radius: 10px;
+}
+.box:hover img{
+   scale:1.2;
+   cursor: pointer;
+   
+}
